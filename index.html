@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Thomas Butcher - Computer Science Student">
+    <title>Thomas Butcher - Portfolio</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body id="top">
+    <header class="header">
+        <div class="header-content">
+            <h1 class="logo"><a href="#top" class="logo-link">Thomas Butcher</a></h1>
+            <nav class="nav" aria-label="Main navigation">
+                <ul class="nav-list">
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="theme-toggle-wrapper">
+                <button class="theme-toggle btn btn-secondary" id="theme-toggle" aria-label="Switch to dark mode">
+                    Dark Mode
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <h2 class="hero-title">Computer Science Student</h2>
+                <p class="hero-tagline">Building clean, thoughtful software since 2024</p>
+                <div class="hero-cta">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="resume.html" class="btn btn-secondary">Resumé</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about">
+            <div class="section-content">
+                <h2 class="section-title">About</h2>
+                <p class="about-text">
+                    I'm a computer science student halfway through my bachelor's degree with a concentration in software engineering. 
+                    I'm driven by a passion for learning new skills and solving complex problems. My interests range from algorithms 
+                    and data structures to full-stack development and system design.
+                </p>
+                <p class="about-text">
+                    Beyond coding, I enjoy hiking, snowboarding, programming side projects, and self-hosting a server. I bring dedication and 
+                    loyalty to everything I pursue, and I'm actively seeking opportunities to grow and contribute to meaningful projects.
+                </p>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects">
+            <div class="section-content">
+                <h2 class="section-title">Featured Projects</h2>
+                <div class="projects-grid">
+                    <!-- Project 1 -->
+                    <article class="project-card">
+                        <h3 class="project-title">Web Design and Programming Project 1</h3>
+                        <p class="project-description">
+                            A focused exploration of core concepts from my Web Design and Programming course. 
+                            This project demonstrates clean code practices and thoughtful design.
+                        </p>
+                        <button class="project-link project-modal-trigger" type="button" data-project="csci181p1" aria-haspopup="dialog" aria-controls="project-modal" aria-label="Open details for CSCI 181 Project 1">
+                            View Project
+                        </button>
+                    </article>
+
+                    <!-- Project 2 -->
+                    <article class="project-card">
+                        <h3 class="project-title">Web Design and Programming Project 2</h3>
+                        <p class="project-description">
+                            This project showcases the use of modals to enhance user interaction and experience.
+                        </p>
+                        <button class="project-link project-modal-trigger" type="button" data-project="csci181p2" aria-haspopup="dialog" aria-controls="project-modal" aria-label="Open details for CSCI 181 Project 2">
+                            View Project
+                        </button>
+                    </article>
+
+                    <!-- Project 3 -->
+                    <article class="project-card">
+                        <h3 class="project-title">Data Structures & Algorithms Repository</h3>
+                        <p class="project-description">
+                            A comprehensive exploration of fundamental algorithms and data structures, 
+                            demonstrating my understanding of computer science fundamentals.
+                        </p>
+                        <button class="project-link project-modal-trigger" type="button" data-project="dsa" aria-haspopup="dialog" aria-controls="project-modal" aria-label="Open details for Data Structures and Algorithms Repository project">
+                            View Project
+                        </button>
+                    </article>
+
+                    <!-- Project 4 -->
+                    <article class="project-card">
+                        <h3 class="project-title">Interdisciplinary CS "Living World" Project</h3>
+                        <p class="project-description">
+                            An application of intermediate object-oriented programming concepts and practices from my coursework, 
+                            showcasing practical development skills.
+                        </p>
+                        <button class="project-link project-modal-trigger" type="button" data-project="csci152" aria-haspopup="dialog" aria-controls="project-modal" aria-label="Open details for Interdisciplinary CS 'Living World' project">
+                            View Project
+                        </button>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills">
+            <div class="section-content">
+                <h2 class="section-title">Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <h3 class="skill-name">Python</h3>
+                        <p class="skill-description">Data processing, algorithms, and automation</p>
+                    </div>
+                    <div class="skill-item">
+                        <h3 class="skill-name">JavaScript</h3>
+                        <p class="skill-description">Web development and interactive applications</p>
+                    </div>
+                    <div class="skill-item">
+                        <h3 class="skill-name">Java</h3>
+                        <p class="skill-description">Object-oriented design and systems</p>
+                    </div>
+                    <div class="skill-item">
+                        <h3 class="skill-name">Data Structures and Algorithms</h3>
+                        <p class="skill-description">Arrays, trees, graphs, sorting, searching, and optimization</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <div class="section-content">
+                <h2 class="section-title">Contact</h2>
+                <p class="contact-intro">
+                    I'd love to hear from you. Feel free to reach out via e-mail, LinkedIn, or GitHub.
+                </p>
+                <div class="contact-links">
+                    <a href="mailto:thomasbutcher06@outlook.com" class="contact-link">
+                        Email: thomasbutcher06@outlook.com
+                    </a>
+                    <a href="https://github.com/thomas-butcher" class="contact-link" target="_blank" rel="noopener noreferrer">
+                        GitHub: thomas-butcher
+                        <span class="sr-only">(opens in new tab)</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/thomas-butcher-04b2a0285/" class="contact-link" target="_blank" rel="noopener noreferrer">
+                        LinkedIn: thomas-butcher
+                        <span class="sr-only">(opens in new tab)</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div class="project-modal-overlay" id="project-modal-overlay" hidden>
+        <div class="project-modal" id="project-modal" role="dialog" aria-modal="true" aria-labelledby="project-modal-title" aria-describedby="project-modal-description" tabindex="-1">
+            <button class="modal-close" id="project-modal-close" type="button" aria-label="Close project details modal">Close</button>
+            <h3 class="project-modal-title" id="project-modal-title"></h3>
+            <p class="project-modal-description" id="project-modal-description"></p>
+            <div class="project-modal-meta" id="project-modal-meta"></div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>2026 Thomas Butcher. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="scripts/theme-toggle.js"></script>
+    <script src="scripts/modal.js"></script>
+    <script src="scripts/main.js"></script>
+</body>
+</html>

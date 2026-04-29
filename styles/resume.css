@@ -1,0 +1,229 @@
+/* ============================================================
+   RESUME STYLES
+   ============================================================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+    line-height: 1.6;
+    color: #1a1a1a;
+    background-color: #ffffff;
+}
+
+a {
+    color: #1a1a1a;
+    text-decoration: underline;
+}
+
+a:focus {
+    outline: 2px solid #1a1a1a;
+    outline-offset: 2px;
+}
+
+/* ============================================================
+   LAYOUT
+   ============================================================ */
+
+.resume-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+/* ============================================================
+   HEADER
+   ============================================================ */
+
+.resume-header {
+    text-align: center;
+    margin-bottom: 2rem;
+    border-bottom: 2px solid #1a1a1a;
+    padding-bottom: 1.5rem;
+}
+
+.resume-header h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.contact-info {
+    font-size: 0.95rem;
+    color: #666;
+}
+
+.contact-info a {
+    color: #1a1a1a;
+    margin: 0 0.5rem;
+}
+
+/* ============================================================
+   CONTENT
+   ============================================================ */
+
+.resume-section {
+    margin-bottom: 2.5rem;
+}
+
+.resume-section-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 0.5rem;
+}
+
+.resume-section p {
+    margin-bottom: 0.75rem;
+    line-height: 1.7;
+}
+
+/* Skills */
+.skills-list {
+    list-style: none;
+    padding: 0;
+}
+
+.skills-list li {
+    padding: 0.5rem 0;
+    line-height: 1.6;
+}
+
+/* Projects */
+.project {
+    margin-bottom: 1.5rem;
+}
+
+.project-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+}
+
+.project-meta {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 0.5rem;
+    font-style: italic;
+}
+
+.project ul {
+    margin-left: 1.5rem;
+    margin-top: 0.5rem;
+}
+
+.project li {
+    margin-bottom: 0.5rem;
+    line-height: 1.6;
+}
+
+/* Education */
+.education {
+    margin-bottom: 1rem;
+}
+
+.education-school {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+}
+
+.education-meta {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 0.5rem;
+    font-style: italic;
+}
+
+.education-courses {
+    font-size: 0.95rem;
+    color: #666;
+}
+
+/* ============================================================
+   FOOTER
+   ============================================================ */
+
+.resume-footer {
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid #e0e0e0;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.resume-footer a {
+    color: #1a1a1a;
+}
+
+/* ============================================================
+   PRINT STYLES
+   ============================================================ */
+
+@media print {
+    body {
+        background-color: #ffffff;
+    }
+
+    .resume-footer {
+        display: none;
+    }
+
+    a {
+        color: #1a1a1a;
+        text-decoration: none;
+    }
+
+    /* Optimize for single column on print */
+    .resume-container {
+        padding: 0;
+        max-width: 100%;
+    }
+}
+
+/* ============================================================
+   RESPONSIVE
+   ============================================================ */
+
+@media (max-width: 768px) {
+    .resume-container {
+        padding: 1rem;
+    }
+
+    .resume-header h1 {
+        font-size: 1.75rem;
+    }
+
+    .contact-info {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+        font-size: 0.9rem;
+    }
+
+    .contact-info a {
+        margin: 0;
+    }
+}
+
+/* ============================================================
+   ACCESSIBILITY
+   ============================================================ */
+
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
