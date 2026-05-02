@@ -54,7 +54,7 @@ document.addEventListener("DOMContentLoaded", function () {
         "CSCI 152 work showcasing applied programming concepts and class-based outcomes.",
       stack: "Java",
       status: "Completed",
-      repo: "https://github.com/thomas-butcher/Living-World-Project",
+      repo: "https://github.com/samuelpenney/LivingWorld",
     },
   };
 
