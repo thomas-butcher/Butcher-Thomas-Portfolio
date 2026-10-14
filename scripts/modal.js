@@ -56,6 +56,13 @@ document.addEventListener("DOMContentLoaded", function () {
       status: "Completed",
       repo: "https://github.com/samuelpenney/LivingWorld",
     },
+    webappdev: {
+        title: 'Web App Development "Company Website" Project',
+        description: "Course assignment with technical applications of web app development.",
+        stack: "Python, Django",
+        status: "Completed",
+        repo: "https://github.com/thomas-butcher/company_website",
+    }
   };
 
   let lastFocusedTrigger = null;
