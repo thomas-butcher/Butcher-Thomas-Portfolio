@@ -57,12 +57,21 @@ document.addEventListener("DOMContentLoaded", function () {
       repo: "https://github.com/samuelpenney/LivingWorld",
     },
     webappdev: {
-        title: 'Web App Development "Company Website" Project',
-        description: "Course assignment with technical applications of web app development.",
-        stack: "Python, Django",
-        status: "Completed",
-        repo: "https://github.com/thomas-butcher/company_website",
-    }
+      title: 'Web App Development "Company Website" Project',
+      description:
+        "Course assignment with technical applications of web app development.",
+      stack: "Python, Django",
+      status: "Completed",
+      repo: "https://github.com/thomas-butcher/company_website",
+    },
+    blogexample: {
+      title: "Django Blog Example",
+      description:
+        "A blog web application built with Django, demonstrating models, views, templates, and URL routing.",
+      stack: "Python, Django",
+      status: "Completed",
+      repo: "https://github.com/thomas-butcher/blog_example",
+    },
   };
 
   let lastFocusedTrigger = null;
@@ -131,6 +140,29 @@ document.addEventListener("DOMContentLoaded", function () {
 
     if (event.key === "Escape") {
       closeModal();
+      return;
+    }
+
+    // Keep keyboard focus inside the modal while it is open
+    if (event.key === "Tab") {
+      const focusable = overlay.querySelectorAll(
+        'a[href], button:not([disabled]), [tabindex]:not([tabindex="-1"])',
+      );
+      if (!focusable.length) {
+        return;
+      }
+      const first = focusable[0];
+      const last = focusable[focusable.length - 1];
+      if (event.shiftKey && document.activeElement === first) {
+        event.preventDefault();
+        last.focus();
+      } else if (!event.shiftKey && document.activeElement === last) {
+        event.preventDefault();
+        first.focus();
+      } else if (!overlay.contains(document.activeElement)) {
+        event.preventDefault();
+        first.focus();
+      }
     }
   });
 });
